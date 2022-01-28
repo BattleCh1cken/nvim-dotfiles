@@ -44,13 +44,15 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use {"nvim-telescope/telescope.nvim",requires = { "nvim-lua/plenary.nvim" },config = require "user.plugins.configs.telescope",}
-  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate", config = require "user.plugins.configs.treesitter" }
-  use {"windwp/nvim-autopairs", config = require "user.plugins.configs.autopairs"}
-  use {'numToStr/Comment.nvim',config = require "user.plugins.configs.comment"}
+  use {"nvim-telescope/telescope.nvim",requires = { "nvim-lua/plenary.nvim" },config = require "user.plugins.configs.telescope",} -- fuzy finder
+  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate", config = require "user.plugins.configs.treesitter"} --syntax highlightin
+  use {"windwp/nvim-autopairs", config = require "user.plugins.configs.autopairs"} --autopairs
+  use {'numToStr/Comment.nvim',config = require "user.plugins.configs.comment"} --faster commenting
+  use {"kyazdani42/nvim-tree.lua", config = require "user.plugins.configs.nvim-tree"} --file explorere
+  use {"lukas-reineke/indent-blankline.nvim", config = "user.plugins.configs.indent-blankline"} -- pretty indents
   --Themes
   use "rmehri01/onenord.nvim" -- A nord theme
-  
+  use "shaunsingh/nord.nvim"  -- another nord theme  
   --CMP Plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -67,9 +69,7 @@ return packer.startup(function(use)
   use { "williamboman/nvim-lsp-installer" }
 
   --git
-  use {
-  'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'},config = "user.plugins.configs.gitsigns"}
-
+  use {'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'}, config = require"user.plugins.configs.gitsigns"}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
