@@ -11,6 +11,8 @@ return packer.startup(function()
   use {'numToStr/Comment.nvim',config = require "user.plugins.configs.comment"} --faster commenting
   use {"kyazdani42/nvim-tree.lua", config = require "user.plugins.configs.nvim-tree"} --file explorere
   use {"lukas-reineke/indent-blankline.nvim", config = "user.plugins.configs.indent-blankline"} -- pretty indents
+  use "kyazdani42/nvim-web-devicons"
+  use {"akinsho/bufferline.nvim", config = "user.plugins.configs.bufferline"}
   --Themes
   use "rmehri01/onenord.nvim" -- A nord theme
   use "shaunsingh/nord.nvim"  -- another nord theme  
