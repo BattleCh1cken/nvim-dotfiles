@@ -12,7 +12,7 @@ return packer.startup(function()
   use {"kyazdani42/nvim-tree.lua", config = require "user.plugins.configs.nvim-tree"} --file explorere
   use {"lukas-reineke/indent-blankline.nvim", config = "user.plugins.configs.indent-blankline"} -- pretty indents
   use "kyazdani42/nvim-web-devicons"
-  use {"akinsho/bufferline.nvim", config = "user.plugins.configs.bufferline"}
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons',config = require "user.plugins.configs.bufferline"}
   --Themes
   use "rmehri01/onenord.nvim" -- A nord theme
   use "shaunsingh/nord.nvim"  -- another nord theme  
@@ -32,5 +32,5 @@ return packer.startup(function()
   use { "williamboman/nvim-lsp-installer" }
 
   --git
-  use {'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'}, config = require"user.plugins.configs.gitsigns"}
+  use {'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'}, config = require "user.plugins.configs.gitsigns"}
 end)

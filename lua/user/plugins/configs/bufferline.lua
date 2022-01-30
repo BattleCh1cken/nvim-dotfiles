@@ -97,7 +97,7 @@ bufferline.setup {
     },
     close_button_visible = {
       guifg = { attribute = "fg", highlight = "TabLine" },
-      guibg = { attribute = "bg", highlight = "TabLine" },
+      gubg = { attribute = "bg", highlight = "TabLine" },
     },
     -- close_button_selected = {
     --   guifg = {attribute='fg',highlight='TabLineSel'},
