@@ -14,7 +14,7 @@ return packer.startup(function()
   use "kyazdani42/nvim-web-devicons"
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons',config = 'require "plugins.configs.bufferline"'}
   --Themes
-  use "shaunsingh/nord.nvim"  -- another nord theme  
+  use "shaunsingh/nord.nvim"  
   --CMP Plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
@@ -30,6 +30,8 @@ return packer.startup(function()
   use "neovim/nvim-lspconfig" -- enable LSP
   use { "williamboman/nvim-lsp-installer" }
 
+  --null-ls
+  use {"jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" }, config = 'require "plugins.configs.null-ls"'}
   --git
   use {'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'}, config = 'require "plugins.configs.gitsigns"'}
 end)
