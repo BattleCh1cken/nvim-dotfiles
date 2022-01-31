@@ -1,7 +1,7 @@
 local status_ok, indent = pcall(require, "indent_blankline")
-
 if not status_ok then
-    returnend
+    return
+end
 
 indent.setup {
     char = "│",

@@ -1,12 +1,11 @@
 local ok, treesitter = pcall(require, "nvim-treesitter.configs")
-
 if not ok then
   return
 end
 
 
 treesitter.setup {
-  ensure_installed = "maintained",
+  ensure_installed = {"javascript", "python", "cpp"},
   sync_install = false, 
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {

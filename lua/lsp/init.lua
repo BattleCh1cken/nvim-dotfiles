@@ -1,2 +1,2 @@
-require "user.lsp.cmp"
+require "lsp.cmp"
 --require "user.lsp.lspconfig"
