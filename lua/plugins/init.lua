@@ -8,7 +8,7 @@ return packer.startup(function()
   use {"nvim-telescope/telescope.nvim",requires = { "nvim-lua/plenary.nvim" },config = 'require "plugins.configs.telescope"',} -- fuzy finder
   use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate", config = 'require "plugins.configs.treesitter"'} --syntax highlightin
   use {"windwp/nvim-autopairs", config = 'require "plugins.configs.autopairs"'} --autopairs
---  use {"numToStr/Comment.nvim",config = 'require "uplugins.configs.comment"'} --faster commenting
+  use {"numToStr/Comment.nvim", config = 'require "plugins.configs.comment"'} --faster commenting
   use {"kyazdani42/nvim-tree.lua", config = 'require "plugins.configs.nvim-tree"'} --file explorer
   use {"lukas-reineke/indent-blankline.nvim", config = 'require"plugins.configs.indent-blankline"'} -- pretty indents
   use "kyazdani42/nvim-web-devicons"
