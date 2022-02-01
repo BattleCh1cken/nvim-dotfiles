@@ -5,7 +5,7 @@ end
 
 
 treesitter.setup {
-  ensure_installed = {"javascript", "python", "cpp"},
+  ensure_installed = {"javascript", "python", "cpp", "lua"},
   sync_install = false, 
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
