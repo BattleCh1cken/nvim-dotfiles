@@ -39,5 +39,4 @@ return packer.startup(function()
 --  use {"jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" }, config = 'require "plugins.configs.null-ls"'}
   --git
   use {'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'}, config = 'require "plugins.configs.gitsigns"'}
-  use {'f-person/git-blame.nvim'}
 end)
