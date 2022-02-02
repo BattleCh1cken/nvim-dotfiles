@@ -13,8 +13,11 @@ return packer.startup(function()
   use {"lukas-reineke/indent-blankline.nvim", config = 'require"plugins.configs.indent-blankline"'} -- pretty indents
   use "kyazdani42/nvim-web-devicons"
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons',config = 'require "plugins.configs.bufferline"'}
+  use {"akinsho/toggleterm.nvim", config = 'require "plugins.configs.toggleterm"'}
+  use {'nvim-lualine/lualine.nvim',requires = { 'kyazdani42/nvim-web-devicons'}, config = 'require "plugins.configs.lualine"'}
   --Themes
   use "shaunsingh/nord.nvim"  
+  use {'andersevenrud/nordic.nvim'}
   --CMP Plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
