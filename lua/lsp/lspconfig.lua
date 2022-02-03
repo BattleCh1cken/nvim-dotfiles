@@ -53,6 +53,11 @@ local on_attach = function(client, bufnr)
 
 	buf_set_option("omnifunc", "v:lua.vim.lsp.omnifunc")
 
+  --null-ls
+  local is_null_ls = client.name == "null-ls"
+  client.resolved_capabilities.document_formatting = is_null_ls
+  client.resolved_capabilities.document_range_formatting = is_null_ls
+  --set keybinds
 	local opts = { noremap = true, silent = true }
 
 	buf_set_keymap("n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) --> jumps to the definition of the symbol under the cursor

@@ -16,7 +16,7 @@ return packer.startup(function()
   use {"akinsho/toggleterm.nvim", config = 'require "plugins.configs.toggleterm"'}
   use {'nvim-lualine/lualine.nvim',requires = { 'kyazdani42/nvim-web-devicons'}, config = 'require "plugins.configs.lualine"'}
   use {'karb94/neoscroll.nvim', config = 'require "plugins.configs.neoscroll"'}
-
+  use {'norcalli/nvim-colorizer.lua', config = 'require "plugins.configs.colorizer"'}
   --Themes
   use "shaunsingh/nord.nvim"  
   use {'andersevenrud/nordic.nvim'}
@@ -36,7 +36,7 @@ return packer.startup(function()
   use { "williamboman/nvim-lsp-installer" }
 
   --null-ls
---  use {"jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" }, config = 'require "plugins.configs.null-ls"'}
+ use {"jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" },} 
   --git
   use {'lewis6991/gitsigns.nvim',requires = {'nvim-lua/plenary.nvim'}, config = 'require "plugins.configs.gitsigns"'}
 end)
