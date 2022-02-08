@@ -1,3 +1,5 @@
-require "lsp.cmp"
-require "lsp.lspconfig"
-require "lsp.null-ls"
+require("lsp.cmp")
+require("lsp.lspconfig")
+require("lsp.null-ls")
+require("lsp.lspcolors")
+require("lsp.trouble")
