@@ -31,7 +31,7 @@ return packer.startup(function()
 	use({ "norcalli/nvim-colorizer.lua", config = 'require "plugins.configs.colorizer"' })
 	--Themes
 	use("shaunsingh/nord.nvim")
-	use({ "andersevenrud/nordic.nvim" })
+	use("andersevenrud/nordic.nvim")
 	--CMP Plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
 	use("hrsh7th/cmp-buffer") -- buffer completions
@@ -46,7 +46,6 @@ return packer.startup(function()
 	--LSP Plugins
 	use({ "neovim/nvim-lspconfig" }) -- enable LSP
 	use({ "williamboman/nvim-lsp-installer" })
-	use({ "folke/lsp-colors.nvim" })
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
 
 	--null-ls
