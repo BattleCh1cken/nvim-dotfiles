@@ -47,6 +47,7 @@ return packer.startup(function()
 	use({ "neovim/nvim-lspconfig" }) -- enable LSP
 	use({ "williamboman/nvim-lsp-installer" })
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
+	use({ "ray-x/lsp_signature.nvim" })
 
 	--null-ls
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" } })
