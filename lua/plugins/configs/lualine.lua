@@ -66,5 +66,5 @@ lualine.setup({
 		lualine_z = { "location" },
 	},
 	tabline = {},
-	extensions = {},
+	extensions = { "nvim-tree" },
 })
